@@ -6,3 +6,6 @@ target_port = 9956
 client = sc.socket()
 #now we connect to the client 
 client.connect((target_host,target_port)) 
+#now we send some data to  the server
+client.send(b"i am anonymous clinet tell me your ip address\n")
+
