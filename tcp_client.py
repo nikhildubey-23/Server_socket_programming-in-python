@@ -4,4 +4,5 @@ target_host = "127.0.0.1"
 target_port = 9956
 # now second step is to create a socket object
 client = sc.socket()
- 
+#now we connect to the client 
+client.connect((target_host,target_port)) 
