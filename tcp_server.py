@@ -8,3 +8,6 @@ def main():
     server = sc.socket(sc.AF_INET,sc.SOCK_STREAM)
     #now we bind the ip and port 
     server.bind((ip,port))
+    #now we listen the upcoming client ip address and port which is used by the client  
+    server.listen(6)
+    
