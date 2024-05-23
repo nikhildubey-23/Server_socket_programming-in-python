@@ -14,4 +14,5 @@ def main():
     while True:
         client , address =server.accept()
         print(f"accepted connection form {address[0]}:{address[1]}")
-        
+        client_handler = th.Thread(target=handle_client,args=(client,))
+        client_handler.start()
