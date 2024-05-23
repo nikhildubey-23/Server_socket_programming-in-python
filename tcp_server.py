@@ -6,4 +6,5 @@ port = 9000
 def main():
     #now we create object for the socket 
     server = sc.socket(sc.AF_INET,sc.SOCK_STREAM)
-    
+    #now we bind the ip and port 
+    server.bind((ip,port))
