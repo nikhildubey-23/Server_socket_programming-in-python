@@ -10,4 +10,8 @@ def main():
     server.bind((ip,port))
     #now we listen the upcoming client ip address and port which is used by the client  
     server.listen(6)
-    
+    print(f"listening on {ip}:{port} \n ")
+    while True:
+        client , address =server.accept()
+        print(f"accepted connection form {address[0]}:{address[1]}")
+        
